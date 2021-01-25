@@ -8,7 +8,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use App\Models\Order;
 
-class OrderPaid extends Notification
+class OrderPaid extends Notification implements ShouldQueue
 {
     use Queueable;
 
