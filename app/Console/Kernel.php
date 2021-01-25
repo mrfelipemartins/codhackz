@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('queue:work --tries=3')->cron('* * * * * *')->withoutOverlapping();
+        $schedule->command('queue:work --tries=3')->cron('* * * * *')->withoutOverlapping();
         $schedule->job(new \App\Jobs\CancelUnpaidOrders)->hourly();
     }
 
