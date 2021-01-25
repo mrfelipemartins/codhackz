@@ -33,7 +33,7 @@
                     <div class="mt-4 flex justify-center">
                         <button class="btn btn-primary btn-lg mr-2" style="padding-top: 5px; padding-bottom: 5px; height: 35px; font-size: 14px;" :disabled="loading" @click="checkoutWithStripe"><i class="fab fa-stripe"></i> Credit Card</button>
                         <div id="paypal-button-container"></div>
-                        <button class="btn btn-primary btn-lg ml-2" style="padding-top: 5px; padding-bottom: 5px; height: 35px; font-size: 14px;"  :disabled="loading"><i class="fab fa-bitcoin"></i> Pay With Bitcoin</button>
+                        <!-- <button class="btn btn-primary btn-lg ml-2" style="padding-top: 5px; padding-bottom: 5px; height: 35px; font-size: 14px;"  :disabled="loading"><i class="fab fa-bitcoin"></i> Pay With Bitcoin</button> -->
                     </div>
                 </div>
             </div>

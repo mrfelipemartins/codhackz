@@ -5,15 +5,18 @@ import Vue from 'vue';
 import { App as InertiaApp, plugin as InertiaPlugin } from '@inertiajs/inertia-vue';
 import 'jquery/dist/jquery'
 import 'bootstrap/dist/js/bootstrap'
+import VueSweetalert2 from 'vue-sweetalert2';
 import VueChatScroll from 'vue-chat-scroll';
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import PortalVue from 'portal-vue';
 
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'sweetalert2/dist/sweetalert2.min.css';
 
 Vue.mixin({ methods: { route } });
 Vue.use(InertiaPlugin);
 Vue.use(PortalVue);
+Vue.use(VueSweetalert2);
 Vue.use(VueChatScroll);
 
 Vue.mixin({

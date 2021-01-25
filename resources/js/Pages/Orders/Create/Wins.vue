@@ -68,20 +68,19 @@
             },
             updatePrice() {
                 let wins = parseInt(this.wins)
-                if(wins < 5) {
-                    this.price = (wins * 3.99).toFixed(2)
-                } else if(wins === 5) {
-                    this.price = 16.99
-                } else if(wins > 5 && wins < 10) {
-                    this.price = (16.99 + 3.99 * (wins - 5)).toFixed(2)
-                } else if(wins === 10) {
-                    this.price = 30.00
+                if(wins === 1) {
+                    this.price = 3.99
+                } else if(wins === 2) {
+                    this.price = 3.90 * 2
+                } else if(wins > 2 && wins < 10) {
+                    let reduce = 0.10
+                    let index = wins - 2
+                    let base = (3.90 - (reduce * index)).toFixed(2)
+                    this.price = (base * wins).toFixed(2)
                 } else if(wins > 10 && wins < 20) {
-                    this.price = (30.00 + 3.99 * (wins - 10)).toFixed(2)
+                    this.price = (3.10 * wins).toFixed(2)
                 } else if(wins == 20) {
-                    this.price = 54.99
-                } else if(wins > 20) {
-                    this.price = (54.99 + 3.99 * (wins - 20)).toFixed(2)
+                    this.price = (3.00 * wins).toFixed(2)
                 }
             }
         }

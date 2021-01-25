@@ -9,7 +9,7 @@ class Account extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['login', 'password', 'link', 'description'];
+    protected $fillable = ['login', 'password', 'link', 'description', 'birthdate'];
 
     public function order() {
         return $this->belongsTo('App\Models\Order');

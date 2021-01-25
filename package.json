@@ -33,6 +33,7 @@
         "bootstrap-vue": "^2.21.2",
         "jquery": "^3.5.1",
         "vue-chat-scroll": "^2.0.0-alpha.4",
-        "vue-moments-ago": "^0.2.0"
+        "vue-moments-ago": "^0.2.0",
+        "vue-sweetalert2": "^4.1.1"
     }
 }

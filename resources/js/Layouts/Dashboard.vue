@@ -27,9 +27,10 @@
                     </div>
                     <div class="col-md-3" v-else>
                         <div class="bg-gray-800 rounded p-2">
-                            <div class="pb-2 border-b">Admin Panel</div>
+                            <div class="pb-2 border-b text-center">Admin Panel</div>
                             <div class="p-2">
-                                <inertia-link :href="route('orders.index')" :active="route().current('orders.*')" class="block"><i class="fas fa-shopping-cart"></i> Orders</inertia-link>
+                                <inertia-link :href="route('orders.index')" :active="route().current('orders.*')" class="block"><i class="fas fa-shopping-cart"></i> All Orders</inertia-link>
+                                <inertia-link :href="route('accounts.index')" :active="route().current('accounts.*')" class="block mt-1"><i class="fas fa-users"></i> Accounts</inertia-link>
                             </div>
                         </div>
                     </div>

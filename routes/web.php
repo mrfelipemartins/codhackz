@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\StripeController;
 use App\Http\Controllers\MessagesController;
+use App\Http\Controllers\AccountsController;
 use Inertia\Inertia;
 
 /*
@@ -35,6 +36,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::get('orders/{uid}/checkout', [OrdersController::class, 'checkout'])->name('orders.checkout');
     Route::get('orders/{uid}/success', [OrdersController::class, 'success'])->name('orders.success');
     Route::get('orders/{uid}/fail', [OrdersController::class, 'fail'])->name('orders.fail');
+
+    Route::resource('accounts', AccountsController::class);
 
     Route::prefix('stripe')->group(function() {
         Route::post('create-checkout-session', [StripeController::class, 'createCheckoutSession'])->name('stripe.session');
