@@ -2,7 +2,9 @@
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
-                <inertia-link class="navbar-brand" :href="route('index')">CODHackz</inertia-link>
+                <inertia-link class="navbar-brand" :href="route('index')">
+                    <img src="/images/logo.png" alt="" style="height: 48px;">
+                </inertia-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

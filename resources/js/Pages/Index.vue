@@ -47,7 +47,7 @@
                                 <h1 class="mt-2">Bot Lobby</h1>
                                 <br>
                                 <br>
-                                <p>Cheat your way into Call of Duty bot lobbys and boost your accounts statistics and improve your overall skill. Create lobby's at the starting price of $3.95! Here's how we do it 
+                                <p>Cheat your way into Call of Duty bot lobbys and boost your accounts statistics and improve your overall skill. Create lobby's at the starting price of £15! Here's how we do it 
                                     <a href="about.html" style="color: #f2f5f7;">about</a>.
                                 </p>
                                 <inertia-link :href="route('orders.place', 'lobby')" class="btn btn-primary" style="margin-top: -15px;">Order Now</inertia-link>

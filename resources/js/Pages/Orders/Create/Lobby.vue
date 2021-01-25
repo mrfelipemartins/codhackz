@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="mt-4 rounded flex justify-between items-center">
                     <div class="mr-6">
-                        <p>Cheat your way into Call of Duty bot lobbys and boost your accounts statistics and improve your overall skill. Create lobby's at the starting price of $3.95!</p>
+                        <p>Cheat your way into Call of Duty bot lobbys and boost your accounts statistics and improve your overall skill. Create lobby's at the starting price of £15!</p>
                         <p>
                             After payment is confirmed you will be able to speak with us to arrange the service execution.
                         </p>

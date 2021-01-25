@@ -40,7 +40,6 @@
 <script>
     import Dashboard from '@/Layouts/Dashboard'
     import Welcome from '@/Jetstream/Welcome'
-
     export default {
         props: ['accounts'],
         data () {
@@ -63,11 +62,10 @@
                     reverseButtons: true
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        this.$inertia.delete(route('accounts.destroy', id));
+                        this.$inertia.delete(route('accounts.destroy', id))
                     }
                 })
             }
         }
     }
-
 </script>
