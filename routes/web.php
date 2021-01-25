@@ -6,6 +6,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrdersController;
 use App\Http\Controllers\StripeController;
+use App\Http\Controllers\PaypalController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\AccountsController;
 use Inertia\Inertia;
@@ -25,6 +26,7 @@ Route::get('/', [FrontendController::class, 'index'])->name('index');
 
 Route::prefix('webhook')->group(function() {
     Route::post('stripe', [StripeController::class, 'webhook']);
+    Route::post('paypal', [PaypalController::class, 'webhook']);
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function() {
