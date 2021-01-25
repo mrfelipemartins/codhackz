@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="text-center py-4">
                     <h1>Bot Lobby</h1>
-                    <p class="text-yellow-500 font-bold">Create lobby's at the starting price of $3.95</p>
+                    <p class="text-yellow-500 font-bold">Create lobby's at the starting price of £15</p>
                 </div>
             </div>
         </div>

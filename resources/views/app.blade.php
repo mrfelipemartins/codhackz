@@ -17,7 +17,7 @@
         <!-- Scripts -->
         @routes
         <script src="https://js.stripe.com/v3/"></script>
-        <script src="https://www.paypal.com/sdk/js?client-id={{config('services.paypal.client_id')}}&disable-funding=credit,card&currency=BRL"></script>
+        <script src="https://www.paypal.com/sdk/js?client-id={{config('services.paypal.client_id')}}&disable-funding=credit,card&currency=GBP"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
         <script src="https://kit.fontawesome.com/6ee8fbe20c.js" crossorigin="anonymous"></script>
     </head>
