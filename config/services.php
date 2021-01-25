@@ -37,6 +37,10 @@ return [
     'paypal' => [
         'client_id' => 'AX6SH5krb1ErMx3fzbeLcOL2V977LLHLGTs4L1VVfINtGI20psEBTHoyNOVgIWdiLH0If2OKrPwGnhaa',
         'secret' => 'EJDYDqsIK4d2nb1EhZ-m0cYhBo2GWI0uF65p75TZTVq5_vAui-CnNTqMjB6Z4BgjrJKQ9qbdpqR7ICja'
-    ]
+    ],
+
+    'discord' => [
+        'token' => 'ODAzMzY5NTEwMjIwMDcwOTY0.YA8yKQ.Xop6hELnnWx_pjX3iuCBb-gWtRc',
+    ],
 
 ];

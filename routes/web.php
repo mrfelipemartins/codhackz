@@ -52,4 +52,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::get('/dashboard', function() {
         return redirect()->route('dashboard');
     });
+
+    Route::get('test/{msg}', function($msg) {
+        \App\Models\User::findOrFail(1)->notify(new \App\Notifications\DiscordMessage($msg));
+    });
 });

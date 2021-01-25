@@ -62,4 +62,9 @@ class User extends Authenticatable
     public function orders() {
         return $this->hasMany('App\Models\Order');
     }
+
+    public function routeNotificationForDiscord()
+    {
+        return '803374072439767090';
+    }
 }
