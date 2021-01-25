@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 use Ramsey\Uuid\Uuid;
 use Inertia\Inertia;
+use App\Events\NewMessage;
 use Auth;
 use Gate;
 use App\Models\Order;
@@ -112,6 +113,32 @@ class OrdersController extends Controller
         $order = $user->orders()->where('uid', $uid)->firstOrFail();
         $order->payment_gateway = 'PAYPAL';
         $order->save();
+    }
+
+    public function cancel($uid) {
+        $order = $user->orders()->where('uid', $uid)->firstOrFail();
+        $order->status = 'CANCELED';
+        $order->save();
+
+        $message = $order->messages()->create([
+            'body' => 'The order was marked as canceled.',
+            'user_id' => 1
+        ]);
+
+        broadcast(new NewMessage($message));
+    }
+
+    public function deliver($uid) {
+        $order = $user->orders()->where('uid', $uid)->firstOrFail();
+        $order->status = 'DELIVERED';
+        $order->save();
+
+        $message = $order->messages()->create([
+            'body' => 'The order was marked as delivered.',
+            'user_id' => 1
+        ]);
+
+        broadcast(new NewMessage($message));
     }
 
     public function checkout($uid) {

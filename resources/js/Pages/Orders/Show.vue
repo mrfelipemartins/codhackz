@@ -43,8 +43,8 @@
             </div>
 
             <div class="bg-gray-800 rounded mt-4 p-4" v-if="is_admin(user)">
-                <button class="btn btn-primary">Mark as Delivered</button>
-                <button class="btn btn-primary">Cancel Order</button>
+                <button class="btn btn-primary" @click="deliver()">Mark as Delivered</button>
+                <button class="btn btn-primary" @click="cancel()">Cancel Order</button>
             </div>
             
             <div v-if="order.type === 'wins' || order.type === 'lobby'">
@@ -62,7 +62,7 @@
     import ChatInstance from '@/Components/Chat/ChatInstance.vue'
 
     export default {
-        props: ['user', 'order'],
+        props: ['order'],
         data () {
             return {
                 user: this.$inertia.page.props.user
@@ -71,6 +71,38 @@
         components: {
             Dashboard,
             ChatInstance
+        },
+        methods: {
+            deliver() {
+                this.$swal({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, mark as delivered!',
+                    cancelButtonText: 'No, cancel!',
+                    reverseButtons: true
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        this.$inertia.post(route('orders.deliver', this.order.uid))
+                    }
+                })
+            },
+            cancel() {
+                this.$swal({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, cancel order',
+                    cancelButtonText: 'No',
+                    reverseButtons: true
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        this.$inertia.post(route('orders.cancel', this.order.uid))
+                    }
+                })
+            }
         }
     }
 </script>

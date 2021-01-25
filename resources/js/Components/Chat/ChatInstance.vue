@@ -19,7 +19,7 @@
         </div>
         <div class="chat-messages p-2" v-chat-scroll="scrollOptions">
             <div v-for="(message, index) in messages" :key="index">
-                <outgoing-message :user="user" :message="message" v-if="message.user_id === user.id" />
+                <outgoing-message :user="user" :message="message" v-if="message.user_id == user.id" />
                 <incoming-message :user="order.user" :message="message" v-else />
             </div>
         </div>
