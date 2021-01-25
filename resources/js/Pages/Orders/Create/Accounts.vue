@@ -10,7 +10,7 @@
         </div>
         <div class="mt-4">
             <div class="container">
-                <div class="mt-4 rounded flex justify-between items-center">
+                <div class="mt-4 rounded flex justify-between items-center page-content-sm">
                     <div class="mr-6">
                         <p>We're dedicated to provide our customers with fresh warzone ready accounts, phone number verified. The cheapest Call Of Duty Warzone accounts.</p>
                         <p>

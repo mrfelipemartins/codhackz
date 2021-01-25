@@ -10,7 +10,7 @@
                             <p class="m-0">{{user.email}}</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="edit-profile">
                         <inertia-link :href="route('dashboard')" class="btn btn-primary">Edit Profile</inertia-link>
                     </div>
                 </div>
@@ -20,13 +20,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3" v-if="!is_admin(user)">
-                        <div class="bg-gray-800 rounded p-4">
+                        <div class="bg-gray-800 rounded p-4 mb-4">
                             <inertia-link :href="route('dashboard')" :active="route().current('dashboard')" class="block mb-2"><i class="far fa-user"></i> My Account</inertia-link>
                             <inertia-link :href="route('orders.index')" :active="route().current('orders.*')" class="block"><i class="fas fa-shopping-cart"></i> Order History</inertia-link>
                         </div>
                     </div>
                     <div class="col-md-3" v-else>
-                        <div class="bg-gray-800 rounded p-2">
+                        <div class="bg-gray-800 rounded p-2 mb-4">
                             <div class="pb-2 border-b text-center">Admin Panel</div>
                             <div class="p-2">
                                 <inertia-link :href="route('orders.index')" :active="route().current('orders.*')" class="block"><i class="fas fa-shopping-cart"></i> All Orders</inertia-link>

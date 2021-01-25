@@ -10,7 +10,7 @@
         </div>
         <div class="mt-4">
             <div class="container">
-                <div class="mt-4 rounded flex justify-between items-center">
+                <div class="mt-4 rounded flex justify-between items-center page-content-sm">
                     <div class="mr-6">
                         <p>Cheat your way into Call of Duty bot lobbys and boost your accounts statistics and improve your overall skill. Create lobby's at the starting price of £15!</p>
                         <p>

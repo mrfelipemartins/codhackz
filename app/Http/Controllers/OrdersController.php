@@ -71,7 +71,7 @@ class OrdersController extends Controller
             ]);
 
             $stock->order_id = $order->id;
-            $stock->on_hold_until = now()->addHours(4);
+            $stock->on_hold_until = now()->addHours(1);
             $stock->save();
 
         } else if($type === 'wins') {

@@ -2,26 +2,28 @@
     <dashboard>
         <template #content>
             <div class="bg-gray-800 rounded">
-                <table class="table mb-0">
-                    <thead>
-                        <tr>
-                            <th style="width: 80%">Product</th>
-                            <th style="width: 10%">Qty</th>
-                            <th style="width: 10%">Amount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="(item, index) in order.items" :key="index">
-                            <td>{{item.name}}</td>
-                            <td>{{item.amount}}</td>
-                            <td>£{{item.price / 100}}</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Total</td>
-                            <td>£{{order.total / 100}}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <th style="width: 80%">Product</th>
+                                <th style="width: 10%">Qty</th>
+                                <th style="width: 10%">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(item, index) in order.items" :key="index">
+                                <td>{{item.name}}</td>
+                                <td>{{item.amount}}</td>
+                                <td>£{{item.price / 100}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Total</td>
+                                <td>£{{order.total / 100}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="bg-gray-800 rounded mt-4" v-if="order.status === 'OPEN'">
                 <div class="p-4 text-center">

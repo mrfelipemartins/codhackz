@@ -10,7 +10,7 @@
         </div>
         <div class="mt-4">
             <div class="container">
-                <div class="mt-4 rounded flex justify-between items-center">
+                <div class="mt-4 rounded flex justify-between items-center page-content-sm">
                     <div class="mr-6">
                         <p>We have professional Call of duty players ready to level accounts up and collect plenty of wins and boost your statistics.</p>
                         <p>

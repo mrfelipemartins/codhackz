@@ -715,3 +715,38 @@ footer {
 nav .dropdown-toggle::after {
     display: none;
 }
+
+@media(max-width: 640px) {
+    .box-row {
+        margin: 0px !important;
+    }
+    .navbar {
+        z-index: 10000;
+    }
+    .navbar .nav-link {
+        text-align: center;
+    }
+    .navbar .nav-item {
+        text-align: center;
+        margin: 0 !important;
+        margin-bottom: 10px !important;
+    }
+    .page-content-sm {
+        flex-direction: column;
+        text-align: center;
+    }
+    .gateway-buttons  {
+        flex-direction: column;
+        margin-bottom: 20px;;
+    }
+    .edit-profile {
+        display: none;
+    }
+    .stripe-btn {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .page-content-sm img {
+        margin-top: 20px;
+    }
+}
