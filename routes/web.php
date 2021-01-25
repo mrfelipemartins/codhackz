@@ -41,6 +41,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function() {
     Route::post('orders/{uid}/pending', [OrdersController::class, 'pending'])->name('orders.pending');
     Route::post('orders/{uid}/deliver', [OrdersController::class, 'deliver'])->name('orders.deliver');
     Route::post('orders/{uid}/cancel', [OrdersController::class, 'cancel'])->name('orders.cancel');
+    Route::post('orders/{uid}/pay', [OrdersController::class, 'pay'])->name('orders.pay');
 
     Route::resource('accounts', AccountsController::class);
 

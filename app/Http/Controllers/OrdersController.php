@@ -115,6 +115,15 @@ class OrdersController extends Controller
         $order->save();
     }
 
+    public function pay($uid) {
+        $order = Order::where('uid', $uid)->firstOrFail();
+        $order->payment_gateway = 'MANUAL';
+        $order->status = 'PAID';
+        $order->save();
+        $order->deliver();
+        return redirect()->route('orders.show', $uid);
+    }
+
     public function cancel($uid) {
         $order = Order::where('uid', $uid)->firstOrFail();
         $order->status = 'CANCELED';

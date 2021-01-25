@@ -45,6 +45,7 @@
             <div class="bg-gray-800 rounded mt-4 p-4" v-if="is_admin(user)">
                 <button class="btn btn-primary" @click="deliver()">Mark as Delivered</button>
                 <button class="btn btn-primary" @click="cancel()">Cancel Order</button>
+                <button class="btn btn-primary" v-if="order.status == 'OPEN'" @click="pay()">Mark as Paid</button>
             </div>
             
             <div v-if="order.type === 'wins' || order.type === 'lobby'">
@@ -84,7 +85,7 @@
                     reverseButtons: true
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        this.$inertia.post(route('orders.deliver', this.order.uid))
+                        axios.post(route('orders.deliver', this.order.uid))
                     }
                 })
             },
@@ -99,7 +100,22 @@
                     reverseButtons: true
                 }).then((result) => {
                     if(result.isConfirmed) {
-                        this.$inertia.post(route('orders.cancel', this.order.uid))
+                        axios.post(route('orders.cancel', this.order.uid))
+                    }
+                })
+            },
+            pay() {
+                this.$swal({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, mark as paid',
+                    cancelButtonText: 'No',
+                    reverseButtons: true
+                }).then((result) => {
+                    if(result.isConfirmed) {
+                        this.$inertia.post(route('orders.pay', this.order.uid))
                     }
                 })
             }
