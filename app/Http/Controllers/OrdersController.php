@@ -124,7 +124,7 @@ class OrdersController extends Controller
     {
         $user = Auth::user();
         $order = Order::where('uid', $id)->firstOrFail();
-        Gate::authorize('show-order', $order);
+        // Gate::authorize('show-order', $order);
         return Inertia::render('Orders/Show', [
             'order' => $order
         ]);
