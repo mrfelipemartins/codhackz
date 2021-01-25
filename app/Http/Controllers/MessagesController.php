@@ -17,7 +17,7 @@ class MessagesController extends Controller
     public function index($order_id)
     {
         $order = Order::findOrFail($order_id);
-        return $order->messages;
+        return $order->messages()->with('user')->get();
     }
 
     /**

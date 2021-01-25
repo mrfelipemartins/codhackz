@@ -17,8 +17,7 @@
                                 <h1 class="mt-2">Premium Accounts</h1>
                                 <br>
                                 <br>
-                                <p>We're dedicated to provide our customers with premium high leveled accounts with 100's of battle royal wins. Visit the 
-                                    <a href="shop.html" style="color: #f2f5f7;">page</a> to purchase these premium accounts. The cheapest Call Of Duty Warzone accounts
+                                <p>We're dedicated to provide our customers with fresh warzone ready accounts, phone number verified. The cheapest Call Of Duty Warzone accounts.
                                 </p>
                                 <inertia-link :href="route('orders.place', 'premium-accounts')" class="btn btn-primary" style="margin-top: -15px;">Order Now</inertia-link>
                             </div>

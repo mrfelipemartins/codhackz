@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="mt-4 rounded flex justify-between items-center">
                     <div class="mr-6">
-                        <p>We're dedicated to provide our customers with premium high leveled accounts with 100's of battle royal wins. Visit the page to purchase these premium accounts. The cheapest Call Of Duty Warzone accounts.</p>
+                        <p>We're dedicated to provide our customers with fresh warzone ready accounts, phone number verified. The cheapest Call Of Duty Warzone accounts.</p>
                         <p>
                             After payment is confirmed your account will be delivered automatically to your e-mail account.
                         </p>
