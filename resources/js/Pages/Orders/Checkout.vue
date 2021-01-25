@@ -68,7 +68,8 @@
                                 invoice_id: self.order.uid,
                                 value: self.order.total / 100,
                                 currency_code: "GBP",
-                                description: self.order.items[0].name
+                                description: self.order.items[0].name,
+                                invoice_number: self.order.uid
                             }
                         }]
                     })
