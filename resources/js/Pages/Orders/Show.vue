@@ -26,7 +26,7 @@
             <div class="bg-gray-800 rounded mt-4" v-if="order.status === 'OPEN'">
                 <div class="p-4 text-center">
                     <h1 style="font-size: 18px; color: gold;"><i class="fas fa-clock"></i> Payment is still pending</h1>
-                    <inertia-link :href="route('orders.checkout', order.uid)" class="btn btn-primary">Pay Now</inertia-link>
+                    <inertia-link :href="route('orders.checkout', order.uid)" class="btn btn-primary" v-if="!order.payment_gateway">Pay Now</inertia-link>
                 </div>
             </div>
             <div class="bg-gray-800 rounded mt-4" v-if="order.status === 'PAID'">

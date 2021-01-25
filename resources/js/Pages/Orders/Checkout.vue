@@ -77,6 +77,8 @@
                 },
                 onApprove: function(data, actions) {
                     return actions.order.capture().then(function(details) {
+                        console.log(details)
+                        axios.post('orders.pending', self.order.uid)
                         location.href = route('orders.success', self.order.uid)
                     });
                 }

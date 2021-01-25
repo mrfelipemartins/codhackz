@@ -108,6 +108,12 @@ class OrdersController extends Controller
         return redirect()->route('orders.checkout', $order->uid);
     }
 
+    public function pending($uid) {
+        $order = $user->orders()->where('uid', $uid)->firstOrFail();
+        $order->payment_gateway = 'PAYPAL';
+        $order->save();
+    }
+
     public function checkout($uid) {
         $user = Auth::user();
         $order = $user->orders()->where('uid', $uid)->firstOrFail();
