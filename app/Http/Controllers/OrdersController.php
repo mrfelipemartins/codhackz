@@ -95,6 +95,8 @@ class OrdersController extends Controller
                 $name = "Bot Lobby - 1 hour 25x speed";
             } else if($request->lobby === 'max-level-max-guns') {
                 $name = "Max Level and Max Guns";
+            } else if($request->lobby === 'dark-aether-unlock-all-camos') {
+                $name = "Dark Aether Unlock All Camos Instantly";
             }
             $order->items()->create([
                 'name' => $name,

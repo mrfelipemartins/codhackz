@@ -77,7 +77,7 @@
                     let index = wins - 2
                     let base = (3.90 - (reduce * index)).toFixed(2)
                     this.price = (base * wins).toFixed(2)
-                } else if(wins > 10 && wins < 20) {
+                } else if(wins > 9 && wins < 20) {
                     this.price = (3.10 * wins).toFixed(2)
                 } else if(wins == 20) {
                     this.price = (3.00 * wins).toFixed(2)

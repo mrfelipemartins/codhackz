@@ -23,6 +23,7 @@
                                 <option value="2-hours-normal-speed">2 hours normal speed - £15.00</option>
                                 <option value="1-hour-25x-speed">1 hour 25x speed - £25.00</option>
                                 <option value="max-level-max-guns">Max Level and Max Guns - £21.99</option>
+                                <option value="dark-aether-unlock-all-camos">Dark Aether Unlock All Camos Instantly - £50.00</option>
                             </select>
                         </div>
                         <button class="btn btn-primary btn-lg mt-4" :disabled="loading" @click="placeOrder" v-if="price">
@@ -73,6 +74,8 @@
                     this.price = 25.00
                 } else if(this.lobby === 'max-level-max-guns') {
                     this.price = 21.99
+                } else if(this.lobby === 'dark-aether-unlock-all-camos') {
+                    this.price = 50.00
                 } else {
                     this.price = null
                 }
