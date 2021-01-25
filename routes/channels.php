@@ -19,8 +19,5 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
 });
 
 Broadcast::channel('orders.{orderId}', function ($user, $orderId) {
-    if($user->id === 1) {
-        return true;
-    }
-    return $user->id === Order::find($orderId)->user_id;
+    return true;
 });
