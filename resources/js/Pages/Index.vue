@@ -119,7 +119,7 @@
         <div>
             <div class="container">
                 <div class="text-center pt-4">
-                    <h1>What makes us Great?</h1>
+                    <h1>What makes us Great</h1>
                     <p class="text-yellow-500 font-bold">REASONS TO CHOOSE US</p>
                 </div>
                 <div class="mb-2">
