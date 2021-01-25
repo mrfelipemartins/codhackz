@@ -20,6 +20,18 @@
         <script src="https://www.paypal.com/sdk/js?client-id={{config('services.paypal.client_id')}}&disable-funding=credit,card&currency=GBP"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
         <script src="https://kit.fontawesome.com/6ee8fbe20c.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+            window.OneSignal = window.OneSignal || [];
+            OneSignal.push(function() {
+                OneSignal.init({
+                appId: "1e2169ae-d90c-4520-bb55-18451f7bf630",
+                notifyButton: {
+                    enable: true,
+                },
+                });
+            });
+        </script>
     </head>
     <body class="font-sans antialiased">
         @inertia
