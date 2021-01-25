@@ -78,7 +78,7 @@
                 onApprove: function(data, actions) {
                     return actions.order.capture().then(function(details) {
                         console.log(details)
-                        axios.post('orders.pending', self.order.uid)
+                        axios.post(route('orders.pending', self.order.uid))
                         location.href = route('orders.success', self.order.uid)
                     });
                 }
@@ -86,7 +86,7 @@
         },
         methods: {
             checkoutWithStripe() {
-                var stripe = Stripe('pk_test_51I8VLgJ5eYLNHsuuuVREgOel6aQIarm8t6bsd1vu0SeM8aFqKPIaraoQpKwHkhpv2JlPRTdu03CXs6qMbHCUMdBY00HG3J5LfT');
+                var stripe = Stripe('pk_live_51I8VLgJ5eYLNHsuuc3SW8qNERTTN3G4WqRORAvlsZoQHcyPueWj2DkPb9vtUE3OgmnxHJh1WhJv9J920kaV0JeQ000TEoDdqkJ');
                 axios.post(route('stripe.session'), {
                     uid: this.order.uid
                 }).then(res => {

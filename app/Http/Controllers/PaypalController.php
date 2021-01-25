@@ -12,7 +12,7 @@ class PaypalController extends Controller
             $id = $request->resource['invoice_id'];
             $order = Order::where('uid', $id)->firstOrFail();
             $order->status = 'PAID';
-            $order->payment_gateway = 'STRIPE';
+            $order->payment_gateway = 'PAYPAL';
             $order->save();
             $order->user->notify(new \App\Notifications\OrderPaid($order));
             $order->deliver();

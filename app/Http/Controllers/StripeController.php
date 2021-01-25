@@ -10,7 +10,7 @@ use App\Models\Order;
 class StripeController extends Controller
 {
     public function createCheckoutSession(Request $request) {
-        Stripe::setApiKey('sk_test_51I8VLgJ5eYLNHsuuLvjlSIPTPshHbUAKKfoUvISR3FvD5ULHNjBowxBeqAGlk0ugOmic1eeHl0AXX34aHPtLDbaX00oVAtcYfy');
+        Stripe::setApiKey('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');
         $order = Order::where('uid', $request->uid)->firstOrFail();
         $items = [];
         foreach($order->items as $item) {
