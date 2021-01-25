@@ -110,13 +110,13 @@ class OrdersController extends Controller
     }
 
     public function pending($uid) {
-        $order = $user->orders()->where('uid', $uid)->firstOrFail();
+        $order = Order::where('uid', $uid)->firstOrFail();
         $order->payment_gateway = 'PAYPAL';
         $order->save();
     }
 
     public function cancel($uid) {
-        $order = $user->orders()->where('uid', $uid)->firstOrFail();
+        $order = Order::where('uid', $uid)->firstOrFail();
         $order->status = 'CANCELED';
         $order->save();
 
@@ -129,7 +129,7 @@ class OrdersController extends Controller
     }
 
     public function deliver($uid) {
-        $order = $user->orders()->where('uid', $uid)->firstOrFail();
+        $order = Order::where('uid', $uid)->firstOrFail();
         $order->status = 'DELIVERED';
         $order->save();
 
