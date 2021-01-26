@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="testimonial">
-                            <div class="name">Example name</div>
+                            <div class="name">William</div>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -72,41 +72,41 @@
                             </div>
                             <p>
 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    Fast responses from live chat and boosters, in the few times I’ve used them I’ve never been disappointed and always a positive result
 
                 </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="testimonial">
-                            <div class="name">Example name</div>
+                            <div class="name">Felp</div>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                             <p>
 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    Fast and convenient service,boosters always ready to communicate and finish orders as soon as they can with the highest winrate and also being helpful throughout the whole time.
 
                 </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="testimonial">
-                            <div class="name">Example name</div>
+                            <div class="name">Cesar</div>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                             <p>
 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    Fast and professional service, nice customer support!
 
                 </p>
                         </div>
@@ -125,17 +125,26 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box-row">
-                                
+                                <div class="text-center">
+                                    <h1 style="font-size: 32px">Premium Quality</h1>
+                                    Here at CodHackz, treating each customer, new or old, like a part ofour family is what we strive for.. 7 days a week support is available via Live Chat or Email. You’re welcome to come and stay.
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="box-row">
-                                
+                                <div class="text-center">
+                                    <h1 style="font-size: 32px">Security</h1>
+                                    Customer safety is at the heart of everything we do. We do everything in our power to ensure that your details and payment information are as secure as possible – meaning there is no risk at all in purchasing our services. 
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="box-row">
-                                
+                                <div class="text-center">
+                                    <h1 style="font-size: 32px">Premium Support</h1>
+                                    Our customer care team is here for you every day. Have you chatted with one of our specialists already? You can reach them via Live Chat inside your order or on our <a href="#">Contact Page</a>
+                                </div>
                             </div>
                         </div>
                     </div>

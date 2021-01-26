@@ -23,6 +23,9 @@ use Inertia\Inertia;
 */
 
 Route::get('/', [FrontendController::class, 'index'])->name('index');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+Route::post('/contact', [FrontendController::class, 'sendContact'])->name('sendContact');
+Route::get('/reviews', [FrontendController::class, 'reviews'])->name('reviews.index');
 
 Route::prefix('webhook')->group(function() {
     Route::post('stripe', [StripeController::class, 'webhook']);

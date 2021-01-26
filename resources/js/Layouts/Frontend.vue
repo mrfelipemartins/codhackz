@@ -24,10 +24,10 @@
                             </div>
                         </li>
                         <li class="nav-item ml-2">
-                            <a class="nav-link" href="#">About</a>
+                            <inertia-link class="nav-link" :href="route('reviews.index')">Reviews</inertia-link>
                         </li>
                         <li class="nav-item ml-2">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <inertia-link class="nav-link" :href="route('contact')">Contact Us</inertia-link>
                         </li>
                         <li class="nav-item ml-4 mt-1" v-if="!user">
                             <inertia-link :href="route('login')" class="btn btn-outline-light">Login</inertia-link>
@@ -59,28 +59,28 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 ">
-                        <div class="ftr">
+                    <div class="col-md-4">
+                        <div class="ftr text-center">
                             <h3>Links</h3>
                             <ul class="content">
-                                <li><a href="home.html">Home</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a :href="route('index')">Home</a></li>
+                                <li><a :href="route('orders.place', 'premium-accounts')">Premium Accounts</a></li>
+                                <li><a :href="route('orders.place', 'wins')">Warzone Wins</a></li>
+                                <li><a :href="route('orders.place', 'lobby')">Bot Lobby</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="ftr">
+                    <div class="col-md-4">
+                        <div class="ftr text-center">
                             <h3>Contact</h3>
                             <ul class="content">
-                                <li><a href="#">example@gmail.com</a></li>
-                                <li><a href="#">(123) 123-12-123</a></li>
-                                <li><a href="#">Example,EX,1231</a></li>
+                                <li><a href="mailto:support@codhackingservices.com">support@codhackingservices.com</a></li>
+                                <li><a href="#">+44 7568969310</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="ftr">
+                    <div class="col-md-4">
+                        <div class="ftr text-center">
                             <h3>Social</h3>
                             <ul class="content">
                                 <li><a href="#">Discord</a></li>
@@ -89,7 +89,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <div class="ftr">
                             <h3>Join Our Newsletter</h3>
                             <form action="#">
@@ -101,6 +101,11 @@
                                 </div>
                             </form>
                         </div>
+                    </div> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">© All Rights Reserved - CodHackz</div>
                     </div>
                 </div>
             </div>

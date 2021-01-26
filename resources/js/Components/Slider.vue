@@ -4,9 +4,8 @@
             <div class="slider-overlay">
                 <div class="slider-content">
                     <img src="/images/icon.png" alt="Call Of Duty Icon Cheap Accounts">
-                    <h1>Cheap Warzone accounts</h1>
-                    <p>We have the cheapest Call Of Duty Warzone accounts with wins and can provide bot lobbies for you & your friends. We have provided top quality accounts for hundreds of players. Check out our shop to find more offers!</p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <h1 style="text-shadow: 0 0 0.2em #000;">Cheap Warzone accounts</h1>
+                    <p style="text-shadow: 0 0 0.2em #000;">We have the cheapest Call Of Duty Warzone accounts with wins and can provide bot lobbies for you & your friends. We have provided top quality accounts for hundreds of players. Check out our shop to find more offers!</p>
                 </div>
             </div>
             <figure>
