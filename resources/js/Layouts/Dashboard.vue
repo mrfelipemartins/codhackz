@@ -57,6 +57,9 @@
             Frontend,
             Welcome,
         },
+        mounted () {
+            OneSignal.setEmail(this.user.email);
+        }
     }
 </script>
 
