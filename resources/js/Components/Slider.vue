@@ -9,11 +9,11 @@
                 </div>
             </div>
             <figure>
-                <img src="/images/background-1.jpg" alt="Call Of Duty Warzone - Cheap Accounts">
-                <img src="/images/background-2.jpg" alt="Call Of Duty Warzone - Boosting ">
-                <img src="/images/background-3.jpg" alt="Call Of Duty Warzone - Cheap Accounts">
-                <img src="/images/background-1.jpg" alt="Call Of Duty Warzone - Cheap Accounts">
-                <img src="/images/background-2.jpg" alt="Call Of Duty Warzone - Boosting ">
+                <img src="/images/slide-1.jpg" alt="Call Of Duty Warzone - Cheap Accounts">
+                <img src="/images/slide-2.jpg" alt="Call Of Duty Warzone - Boosting ">
+                <img src="/images/slide-3.jpg" alt="Call Of Duty Warzone - Cheap Accounts">
+                <img src="/images/slide-1.jpg" alt="Call Of Duty Warzone - Cheap Accounts">
+                <img src="/images/slide-2.jpg" alt="Call Of Duty Warzone - Boosting ">
             </figure>
         </div>
     </div>    
