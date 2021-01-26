@@ -25,12 +25,12 @@
             window.OneSignal = window.OneSignal || [];
             OneSignal.push(function() {
                 OneSignal.init({
-                appId: "1e2169ae-d90c-4520-bb55-18451f7bf630",
-                notifyButton: {
-                    enable: false,
-                },
+                    appId: "1e2169ae-d90c-4520-bb55-18451f7bf630",
+                    autoRegister: true,
+                    notifyButton: {
+                        enable: false,
+                    },
                 });
-                OneSignal.showNativePrompt();
             });
         </script>
     </head>
