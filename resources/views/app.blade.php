@@ -5,7 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <!-- Primary Meta Tags -->
+        <title>CODHackz - Best Warzone Boosting Services 24/7 Support</title>
+        <meta name="title" content="CODHackz - Best Warzone Boosting Services 24/7 Support">
+        <meta name="description" content="Quick, safe, and affordable Call of Duty Warzone boosting services for levels, kill death ratios, and Wins. 100% satisfaction or money-back guaranteed.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://codhackingservices.com/">
+        <meta property="og:title" content="CODHackz - Best Warzone Boosting Services 24/7 Support">
+        <meta property="og:description" content="Quick, safe, and affordable Call of Duty Warzone boosting services for levels, kill death ratios, and Wins. 100% satisfaction or money-back guaranteed.">
+        <meta property="og:image" content="https://codhackingservices.com/images/seo.jpg">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://codhackingservices.com/">
+        <meta property="twitter:title" content="CODHackz - Best Warzone Boosting Services 24/7 Support">
+        <meta property="twitter:description" content="Quick, safe, and affordable Call of Duty Warzone boosting services for levels, kill death ratios, and Wins. 100% satisfaction or money-back guaranteed.">
+        <meta property="twitter:image" content="https://codhackingservices.com/images/seo.jpg">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
 
@@ -36,5 +53,21 @@
     </head>
     <body class="font-sans antialiased">
         @inertia
+        <div style="display: none">
+            <h1>CODHackz</h1>
+        </div>
     </body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/6010bf56a9a34e36b970b75a/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
 </html>

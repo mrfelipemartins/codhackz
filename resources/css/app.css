@@ -718,6 +718,15 @@ nav .dropdown-toggle::after {
 }
 
 @media(max-width: 640px) {
+    .slider-overlay{
+        top: 250px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 500px;
+        position: absolute;
+        z-index: 1;
+    }
     .box-row {
         margin: 0px !important;
     }
